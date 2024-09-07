@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script
+      src="https://kit.fontawesome.com/7b12bcc245.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="count-down.js"></script>
+    <title>Wedding Invite</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">TheBarmans.in</label>
+        <ul class="text">
+          <li><a href="#countdown" onclick="myFunction()">D-Day</a></li>
+          <li><a href="#story" onclick="myFunction()">OUR STORY</a></li>
+          <li>
+            <a href="#invitation" onclick="myFunction()"
+              >INVITATION CARD & TRAVEL</a
+            >
+          </li>
+          <li><a href="#registry" onclick="myFunction()">PROMISES</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="music">
+        <audio src="song.mp3" id="my_audio" loop="loop"></audio> 
+      </div>
+    <div class="countdown hz-margin reveal">
+      <h3>The final countdown begins... <br /></h3>
+      <!-- count-down -->
+      <div class="countdown col">
+        <div class="timer middle">
+          <span>
+            <div id="days">12</div>
+            <h3>Days</h3>
+          </span>
+          <span>
+            <div id="hours">12</div>
+            <h3>Hours</h3>
+          </span>
+          <span>
+            <div id="minutes">12</div>
+            <h3>Minutes</h3>
+          </span>
+          <span>
+            <div id="seconds">12</div>
+            <h3>Seconds</h3>
+          </span>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <div class="home hz-margin">
+      <h1>Ankita & Subhasish</h1>
+      <h3>are getting married</h3>
+      <div class="container-out">
+        <div class="container-in text">
+          Sri Niloy Kumar Das and Smt. Kakali Das <br/>
+          cordially request the pleasure of your gracious <br/>
+           presence and blessings on the auspicious occasion of <br/>
+            the Wedding Ceremony </br></br></br>
+            &nbsp &nbsp
+            Your presence and blessings would mean the world <br/>
+            to us as we embark on this new journey together.
+        </div>
+        <div class="home-img" id="home-img-lg"></div>
+      </div>
+    </div>
+    <div class="home-img home-img-sm"></div>
+    <div class="timeline hz-margin reveal">
+      <h2>
+        Celebrating Our Love <br />
+        With Those We Love
+      </h2>
+      <div class="timeline-container">
+        <div class="timeline-img"></div>
+        <div class="timings">
+          <h3>01.&nbsp &nbsp Ceremony</h3>
+          <div class="text">
+            Monday, Nov. 25, 2024 <br />
+            10/9 Marconi Avenue, Durgapur-713205
+          </div>
+          <h3>02.&nbsp &nbsp Reception</h3>
+          <div class="text">
+            Tuesday, Nov. 27, 2024 <br />
+            Aramdanga, Ashadu, Bongaon-743259
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="v-reposition-container">
+      <div class="h-reposition-container">
+        <div id="story" class="hz-margin">
+          <h3 class="reveal">
+            Not Just an <br />
+            Ordinary Love Story
+          </h3>
+          <p class="text reveal">
+            It was a typical an evening in Jerusalem, Israel, when Dr.
+            Subhasish, a post-doc researcher from West Bengal, India, decided to
+            take a break from his lab work and browse through a matrimonial
+            site. Meanwhile, in Durgapur, India, Ankita, a digital marketing
+            professional, was reluctantly opening a free account on the same
+            site, only to humor her worried family who were eager to see her
+            settled. As fate would have it, Subhasish stumbled upon Ankita's
+            profile and was immediately drawn to her bright smile and sparkling
+            eyes. He sent her a casual "Hi, hello!" message, not expecting much
+            in return. But to his surprise, Ankita responded, and they started
+            chatting. Their initial conversations were light-hearted and casual,
+            but as they continued to talk, they discovered a deep connection.
+            They shared stories about their families, their passions, and their
+            dreams. Subhasish was captivated by Ankita's confidence and
+            determination, while Ankita admired Subhasish's kind heart and sense
+            of humor. As their friendship blossomed, they realized that they had
+            found something special. They started talking every day, sharing
+            their joys and sorrows, and supporting each other through thick and
+            thin. Months went by, and their connection grew stronger. They
+            decided to meet in person, and Subhasish flew to Kolkata to take
+            Ankita on a romantic date. The sparks flew, and they knew that they
+            were meant to be together. Subhasish and Ankita are getting married,
+            surrounded by their loved ones. They are grateful for that chance
+            encounter on the matrimonial site, which led them to each other.
+            Their love story is a testament to the power of fate and the magic
+            of online connections.
+          </p>
+        </div>
+
+        <div class="gallery hz-margin reveal">
+          <div class="gallery-img"></div>
+          <div class="gallery-img"></div>
+          <div class="gallery-img"></div>
+        </div>
+
+        <div class="quote reveal">
+          <h1>
+            “To the world you are one person, but to one person you are the
+            world”.
+          </h1>
+          <div class="author text">Anonymous</div>
+        </div>
+
+        <div class="hands" id="parallax1"></div>
+
+        <div id="invitation" class="invitation">
+          <h2 class="reveal">Invitation Card and Travel</h2>
+          <div class="invitation-container reveal">
+            <div class="invitation-item">
+              <h3>
+                01. <br />
+                Invitation Card for you
+              </h3>
+              <div class="text">
+                Honor of your presence at our wedding <br />
+                and invite you to download <br />
+                our digital invitation card
+              </div>
+
+              <a
+                href="link"
+                download="Invitation | 25 Nov | Hope to see you there!"
+              >
+                <div class="text links">DOWNLOAD INVITATION CARD</div>
+              </a>
+            </div>
+            <div class="invitation-item">
+              <h3>
+                02. <br />
+                Getting There
+              </h3>
+              <div class="text">
+                Easy-to-follow <br />
+                directions to the venue
+              </div>
+              <a
+                href="https://maps.app.goo.gl/vrEkuvW1JtVQMWnD8"
+                target="_blank"
+              >
+                <div class="text links">MAP & DETAILS</div>
+              </a>
+            </div>
+            <div class="invitation-item">
+              <h3>
+                03. <br />
+                Once You're There
+              </h3>
+              <div class="text">
+                Some fun things to do in <br />
+                the area
+              </div>
+              <div class="text links">OUR RECOMMENDATIONS</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="registry">
+          <div class="registry-container reveal">
+            <h3>Promises</h3>
+            <div class="text">
+              We promise to honor our heritage, to respect our traditions, and
+              to pass on the values and lessons that have been instilled in us
+              to future generations. We vow to be a source of comfort, support,
+              and guidance to our loved ones, and to be there for each other
+              through all of life's joys and challenges. We promise to stand
+              together, hand in hand, as we face the challenges and
+              opportunities that life brings. We vow to support each other, to
+              encourage each other, and to celebrate each other's successes. We
+              promise to build a life that is filled with love, laughter, and
+              adventure, and to share that love with all of you. We thank you
+              for being part of our journey, for supporting us, and for loving
+              us. We love you now and forever, our dear family and friends.
+            </div>
+            <button class="huge-btn text">BLESS US</button>
+          </div>
+          <div class="registry-img registry-img-lg" id="parallax2"></div>
+        </div>
+        <div class="registry-img registry-img-sm"></div>
+
+        <div class="parting-message reveal">
+          <h1>Hope to See You!</h1>
+          <!-- <button class="huge-btn">RSVP</button> -->
+        </div>
+
+        <footer>
+          <h2>Give us a Call</h2>
+          <h4>Niloy Das: 9475150001</h4>
+          <h4>Kakali Das: 9474368750</h4>
+          <h4>Satabdi Das: 7602652130</h4>
+          <h4>Sampad Barman: 9980414606</h4>
+          <div class="text">
+            © 2024 for The Barman's. Made by
+            <a href="https://twitter.com/NathArchak" class="text"
+              >@thebarmans.in</a
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
