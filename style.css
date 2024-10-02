@@ -18,7 +18,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    /* margin: 0; */
     font-family: 'Cinzel', serif;
     color: #212121;
 }
@@ -45,6 +45,14 @@ h3{
 .header{
     height: 90px;
     background-color: #E9EAEC;
+    top: 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
 }
 
 .reveal{
@@ -58,6 +66,7 @@ h3{
     transform: translateY(0);
     opacity: 1;
   }
+
 .text{
     font-family: 'Quicksand', sans-serif;
     font-size: var(--text-size);
@@ -76,6 +85,7 @@ h3{
 .huge-btn:hover{
     color: grey;
     border-color: grey;
+    cursor: pointer;
 }
 .v-reposition-container{
     position: absolute;
@@ -112,8 +122,8 @@ nav ul li{
 }
 nav ul li a{
     font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
-    padding: 7px 13px;
+    font-size: 15px;
+    /* padding: 7px 13px; */
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -138,13 +148,13 @@ a:hover{
         font-size: 20px;
     }
     nav ul li a{
-        font-size: 10px;
+        font-size: 15px;
     }
     html{
         font-size: 10px;
     }
 }
-@media (max-width:570px){
+@media (max-width:730px){
     .checkbtn{
         display: block;
     }
@@ -179,14 +189,14 @@ a:hover{
 /* <===================HOME===================> */
 
 .container-out{
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .home-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic1.jpg?alt=media&token=5dbf5af2-354b-464c-9db2-7da57b484eda);
-    background-size: cover;
+    /* background-image: url("./assets/invitation.jpg"); */
+    background-size: contain;
     background-position: center;
 }
 .home-img-sm{
@@ -196,10 +206,14 @@ a:hover{
     height: 50vh;
 }
 #home-img-lg{
-    display: block;
+    /* display: block;
     height: 110vh;
     width: 50vw;
-    background-position-x: -100px;
+    background-position-x: -100px; */
+    display: block;
+    height: 55vh;
+    width: 50vw;
+    background-repeat: no-repeat;
 }
 @media (max-width:1000px){
     .container-out{
@@ -230,8 +244,15 @@ a:hover{
     flex-direction: row;
     margin: 8vh 0;
 }
-.timeline-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic2.jpg?alt=media&token=7a0e5f94-d68e-4d32-bd3b-2a82b7acd40c);
+.timeline-img2{
+    background-image: url("./assets/subhasish-single-4.jpg");
+    height: 70vh;
+    width: 30vw;
+    background-position: center;
+    background-size: cover;
+}
+.timeline-img1{
+    background-image: url("./assets/ankita-single-2.jpg");
     height: 70vh;
     width: 30vw;
     background-position: center;
@@ -256,7 +277,7 @@ a:hover{
     .timeline-container{
         flex-direction: column;
     }
-    .timeline-img{
+    .timeline-img1, .timeline-img2{
         height: 50vh;
         width: 100%;
     }
@@ -308,7 +329,7 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.gallery-img{
+.gallery-img, .parallal-img{
     width: 30vw;
     height: 30vw;
     margin: 10px;
@@ -316,22 +337,35 @@ a:hover{
     background-position: center;
 }
 .gallery-img:nth-child(1){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic3.jpg?alt=media&token=32a76585-cbeb-41f5-8921-6ad1ff60aa79);
-    background-position-x: right;
+    background-image: url("./assets/11.jpg");
+    background-position: 0 0;
 }
 .gallery-img:nth-child(3){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic4.jpg?alt=media&token=3bde5693-e5c8-412d-bd47-1ef972258406);
+    background-image: url("./assets/33.jpg");
 }
 .gallery-img:nth-child(2){
     background-position-y: top;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic5.jpg?alt=media&token=d9ef9475-ec6d-41ca-8cfd-3e45b70139d3);
+    background-image: url("./assets/22.jpg");
 }
+
+.parallal-img:nth-child(1){
+    background-image: url("./assets/ankita-1.jpg");
+    background-position: 0 0;
+}
+.parallal-img:nth-child(2){
+    background-image: url("./assets/anksu-1.jpg");
+}
+.parallal-img:nth-child(3){
+    background-position-y: top;
+    background-image: url("./assets/subhasish-single-3.jpg");
+}
+
 @media (max-width:1000px){
     .gallery{
         flex-direction: column;
         padding: 0;
     }
-    .gallery-img{
+    .gallery-img, .parallal-img{
         width: 100vw;
         height: 90vw;
         margin: 2px 0;
@@ -366,12 +400,11 @@ a:hover{
 /* <===================HANDS===================> */
 
 .hands{
-    height: 120vh;
+    height: 65vh;
     width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic6.jpg?alt=media&token=febecde7-9479-4a1e-8402-28f021228422);
+    background-image: url("./assets/anksu-2.jpg");
     background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
+    background-position-x: calc(50% - 20px);
     background-repeat: no-repeat;
 }
 
@@ -390,7 +423,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10vh 0;
+    margin: 0vh 0 5vh 0;
 }
 .invitation-item .text{
     margin: 20px 0;
@@ -427,13 +460,10 @@ a:hover{
 }
 .registry-img{
     display: block;
-    height: 100vh;
-    width: 40vw;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic7.jpg?alt=media&token=79b8d974-04ff-4b2d-bed5-82638399b34e);
+    width: 50vw;
+    background-image: url("./assets/anksu-2.jpg");
     background-size: cover;
-    background-position-y: top;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
 }
 .registry-img-sm{
     display: none;
@@ -477,11 +507,11 @@ a:hover{
 /* <===================FOOTER===================> */
 
 footer{
-    margin-top: 20vh;
+    /* margin-top: 10vh; */
     height: fit-content;
     width: 100%;
     background-color: var(--grey-color);
-    padding: 5vh 30px;
+    padding: 2vh 3vh;
 }
 footer h2{
     font-size: 2Srem;
@@ -502,9 +532,15 @@ footer h2{
 }
 
 .countdown{
-	/* background: url(people-marriage-married-sunset.jpg) no-repeat center; */
 	background-size: cover;
     background-color: ivory;
+}
+
+@media (max-width:1000px){
+    .countdown{
+        flex-direction: column;
+        margin: 10px 0;
+    }
 }
 
 .timer{
@@ -569,3 +605,45 @@ footer h2{
 		flex: 100%;
 	}
 }
+
+
+
+/********************************************* Back to top snippet styling */
+/* Set the color, size, and more for the back to top square */
+.back-to-top {
+    background-color: #1d284f;
+    margin: 0;
+    position: fixed;
+    bottom: 100px;
+    right: 45px;
+    width: 55px;
+    height: 45px;
+    z-index: 100;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid 
+  #acacac;
+    box-shadow: 1px 3px 3px 
+  #aeaeae;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  /* Icon styles--set the icon color */
+  .back-to-top i {
+    font-size: 45px;
+    color: white;
+  }
+  /* make visible when scrolled down on page */
+  .back-to-top.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* mouse effect styles */
+  .back-to-top:hover,
+  .back-to-top:active,
+  .back-to-top:focus {
+    color: 
+  #ffffff;
+  }
