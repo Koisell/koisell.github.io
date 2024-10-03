@@ -13,7 +13,7 @@
 
     <title>Wedding Invite</title>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <div class="header">
       <nav>
         <input type="checkbox" id="check" />
@@ -33,10 +33,6 @@
         </ul>
       </nav>
     </div>
-
-    <!-- <div class="music">
-      <audio src="song.mp3" id="my_audio" loop="loop"></audio>
-    </div> -->
 
     <div class="home hz-margin">
       <h2 style="padding: 0 0 0 0">
@@ -226,11 +222,14 @@
       ><i class="fas fa-angle-up" aria-hidden="true"></i
     ></a>
     <div>
-      <audio id="music" autoplay>
-        <source src="song.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <i class="a fa-volume-up" id="volume-icon"></i>
+      <div class="music">
+        <audio src="song.mp3" id="my_audio"></audio>
+      </div>
+      <i
+        class="fa-solid fa-music music-icon"
+        id="volume-icon"
+        onclick="toggleIcon()"
+      ></i>
     </div>
     <script>
       //back to top -up arrow

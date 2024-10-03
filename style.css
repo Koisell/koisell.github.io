@@ -616,7 +616,7 @@ footer h2{
 
 /********************************************* Back to top snippet styling */
 /* Set the color, size, and more for the back to top square */
-.back-to-top {
+.back-to-top{
     background-color: #1d284f;
     margin: 0;
     position: fixed;
@@ -664,10 +664,10 @@ footer h2{
     cursor: pointer;
   }
   
-  #volume-icon.muted {
+  /* #volume-icon.muted {
     font-size: 24px;
     color: #ccc;
-  }
+  } */
 
 /* //////////////////////////// */
   .invitation-item {
