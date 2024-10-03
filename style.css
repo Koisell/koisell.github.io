@@ -47,7 +47,7 @@ h3{
     background-color: #E9EAEC;
     top: 0;
     z-index: 999;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -211,8 +211,8 @@ a:hover{
     width: 50vw;
     background-position-x: -100px; */
     display: block;
-    height: 55vh;
-    width: 50vw;
+    height: 40vh;
+    width: 10vw;
     background-repeat: no-repeat;
 }
 @media (max-width:1000px){
@@ -238,6 +238,7 @@ a:hover{
     width: 100%;
     backdrop-filter: blur(4px);
     padding: 8vh var(--horizontal-margin-spacing);
+    background-color: lightcyan;
 }
 .timeline-container{
     display: flex;
@@ -652,3 +653,48 @@ footer h2{
     color: 
   #ffffff;
   }
+
+
+  /* volume */
+  #volume-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #volume-icon.muted {
+    font-size: 24px;
+    color: #ccc;
+  }
+
+/* //////////////////////////// */
+  .invitation-item {
+    margin-bottom: 20px;
+  }
+  .text.links {
+    /* color: blue; */
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  /* Popup styles */
+  /* .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  } */

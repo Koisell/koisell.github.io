@@ -1,11 +1,11 @@
-$(document).on("click", function () {
-  document.getElementById("my_audio").play();
-});
+// $(document).on("click", function () {
+//   document.getElementById("my_audio").play();
+// });
 
-(function ($) {
-  "use strict";
-  $(".sakura-falling").sakura();
-})(jQuery);
+// (function ($) {
+//   "use strict";
+//   $(".sakura-falling").sakura();
+// })(jQuery);
 
 // // Set the date we're counting down to
 // var countDownDate = new Date("11-25-2024").getTime();
@@ -72,3 +72,19 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+const music = document.getElementById("music");
+const volumeIcon = document.getElementById("volume-icon");
+
+volumeIcon.addEventListener("click", () => {
+  if (music.muted) {
+    music.muted = false;
+    volumeIcon.classList.remove("muted");
+    volumeIcon.classList.add("fa-volume-up");
+  } else {
+    music.muted = true;
+    volumeIcon.classList.add("muted");
+    volumeIcon.classList.remove("fa-volume-up");
+    volumeIcon.classList.add("fa-volume-off");
+  }
+});
