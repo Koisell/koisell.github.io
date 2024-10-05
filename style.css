@@ -189,27 +189,19 @@ a:hover{
 /* <===================HOME===================> */
 
 .container-out{
-    /* margin-top: 5vh; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .home-img{
-    /* background-image: url("./assets/invitation.jpg"); */
     background-size: contain;
     background-position: center;
 }
 .home-img-sm{
-    /* display: none; */
-    /* width: 100%;
-    margin: 20px 0 0 0; */
+    
     height: 5vh;
 }
 #home-img-lg{
-    /* display: block;
-    height: 110vh;
-    width: 50vw;
-    background-position-x: -100px; */
     display: block;
     height: 40vh;
     width: 10vw;
@@ -421,7 +413,7 @@ a:hover{
 
 .invitation{
     background-color: ivory;
-    padding: 0vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing);
+    padding: 0 25px 0 25px;
 }
 
 .invitation-container{
