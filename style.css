@@ -61,7 +61,7 @@ h3{
     opacity: 0;
     transition: 1s all ease;
   }
-  
+
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
@@ -198,7 +198,7 @@ a:hover{
     background-position: center;
 }
 .home-img-sm{
-    
+
     height: 5vh;
 }
 #home-img-lg{
@@ -322,7 +322,7 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.gallery-img, .parallal-img{
+.gallery-img, .parallal-img, .menorca-img{
     width: 30vw;
     height: 30vw;
     margin: 10px;
@@ -354,6 +354,18 @@ a:hover{
 .parallal-img:nth-child(3){
     background-position-y: top;
     background-image: url("./assets/subhasish-single-3.jpg");
+}
+
+.menorca-img:nth-child(1){
+  background-image: url("./assets/accomodation1.jpg");
+  background-position: 0 0;
+}
+.menorca-img:nth-child(3){
+  background-image: url("./assets/bg-coninstructor.jpg");
+}
+.menorca-img:nth-child(2){
+  background-position-y: top;
+  background-image: url("./assets/adventure-cathedral-03.jpg");
 }
 
 @media (max-width:1000px){
@@ -443,7 +455,7 @@ a:hover{
 /* <===================REGISTRY===================> */
 
 #registry{
-    padding: 0vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing); 
+    padding: 0vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -620,9 +632,9 @@ footer h2{
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
-    border: 1px solid 
+    border: 1px solid
   #acacac;
-    box-shadow: 1px 3px 3px 
+    box-shadow: 1px 3px 3px
   #aeaeae;
     visibility: hidden;
     opacity: 0;
@@ -642,7 +654,7 @@ footer h2{
   .back-to-top:hover,
   .back-to-top:active,
   .back-to-top:focus {
-    color: 
+    color:
   #ffffff;
   }
 
@@ -655,7 +667,7 @@ footer h2{
     font-size: 24px;
     cursor: pointer;
   }
-  
+
   /* #volume-icon.muted {
     font-size: 24px;
     color: #ccc;
