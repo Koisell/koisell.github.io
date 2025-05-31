@@ -1,222 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7b12bcc245.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>Wedding Invite</title>
-  </head>
-  <body style="overflow-x: hidden">
-    <div class="header">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Célia & Nicolas </label>
-        <ul class="text">
-          <li><a href="#story" onclick="myFunction()">Notre rencontre</a></li>
-          <li>
-            <a href="#invitation" onclick="myFunction()"
-              >Invitation, Itinéraires & Logement</a>
-          </li>
-          <li><a href="#countdown" onclick="myFunction()">Jour-J</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/7b12bcc245.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Wedding Invite</title>
+</head>
+
+<body style="overflow-x: hidden">
+  <div class="header">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Célia & Nicolas </label>
+      <ul class="text">
+        <li><a href="#story" onclick="myFunction()">Notre rencontre</a></li>
+        <li>
+          <a href="#invitation" onclick="myFunction()">Invitation, Itinéraires & Logement</a>
+        </li>
+        <li><a href="#countdown" onclick="myFunction()">Jour-J</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="home hz-margin">
+    <h2 style="padding: 0 0 0 0">
+      Célia Fontenelle & Nicolas François
+      <h3>se marient</h3>
+    </h2>
+
+    <div style="display: flex; justify-content: space-between"></div>
+    <div class="container-out">
+      <div class="container-in text">
+        Nous avons le plaisir de vous inviter à notre mariage.
+        <br /> A l'occasion du solstice d'été, et plus important encore, de nos 10 ans, nous nous réunirons pour fêter
+        ce moment unique.
+        <br /> Cette journée sera l'occasion de célébrer notre amour dans un cadre intime, au bord de la mer.
+        <br /> Au programme : cérémonie civile, vin d'honneur, photos, dîner (végétarien avec options végétaliennes),
+        danse...
+        <br /> Mais aussi des jeux de sociétés et pas que, des discours (peut-être), et de l'émotion à gogo !
+      </div>
+      <div class="text">
+        Répondez présent en suivant le lien ci-dessous
+
+        <a href="https://forms.gle/wfQVjd1JrrsQQLxn8" target="_blank">
+          <div class="text links">A remplir avant le 21 mai</div>
+        </a>
+
+      </div>
+      <div class="home-img" id="home-img-lg"></div>
+    </div>
+  </div>
+  <div class="home-img home-img-sm"></div>
+  <div class="timeline">
+    <h2>Organisation de la journée</h2>
+    <div class="timeline-container">
+      <div class="timeline-img1"></div>
+      <div class="timings">
+        <h3>01.&nbsp &nbsp Cérémonie et vin d'honneur</h3>
+        <div class="text">
+          Samedi 21 juin 2025 à 14h <br />
+          Mairie de Guerlesquin (29)
+        </div>
+        <h3>02.&nbsp &nbsp Réception</h3>
+        <div class="text">
+          A partir de 17h <br />
+          Salle Bilzig, Locquirec (29)
+        </div>
+        <br />
+        <br />
+
+      </div>
+      <div class="timeline-img2"></div>
+    </div>
+  </div>
+
+  <div class="v-reposition-container">
+    <div class="h-reposition-container">
+      <div id="story" class="hz-margin">
+        <h3 class="reveal">
+          De Rouen à Plouhinec... <br />
+        </h3>
+        <p class="text reveal">
+          Vous serez accueillis avec toute notre attention. N'hésitez pas à nous faire part de vos demandes
+          particulières, que cela soit :
+        <ul class="text reveal">
+          <li> un besoin de garder des animaux (possibilité de s'organiser en commun) ;
+          <li> un régime particulier, des allergies... ;
+          <li> une demande vis-à-vis de l'accessibilité des divers lieux ;
+          <li> des besoins de covoiturage ;
+          <li>...
         </ul>
-      </nav>
-    </div>
-
-    <div class="home hz-margin">
-      <h2 style="padding: 0 0 0 0">
-        Célia Fontenelle & Nicolas François
-        <h3>se marient</h3>
-      </h2>
-
-      <div style="display: flex; justify-content: space-between"></div>
-      <div class="container-out">
-        <div class="container-in text">
-          Nous avons le plaisir de vous inviter à notre mariage.
-          <br /> A l'occasion du solstice d'été, et plus important encore, de nos 10 ans, nous nous réunirons pour fêter ce moment unique.
-          <br /> Cette journée sera l'occasion de célébrer notre amour dans un cadre intime, au bord de la mer.
-          <br /> Au programme : cérémonie civile, vin d'honneur, photos, dîner (végétarien avec options végétaliennes), danse...
-          <br /> Mais aussi des jeux de sociétés et pas que, des discours (peut-être), et de l'émotion à gogo !
-        </div>
-          <div class="text">
-            Répondez présent en suivant le lien ci-dessous
-
-         <a
-           href="https://forms.gle/wfQVjd1JrrsQQLxn8"
-           target="_blank"
-         >
-           <div class="text links">A remplir avant le 21 mai</div>
-          </a>
-
+        </p>
       </div>
-        <div class="home-img" id="home-img-lg"></div>
+
+      <div class="gallery hz-margin reveal">
+        <div class="gallery-img"></div>
+        <div class="gallery-img"></div>
+        <div class="gallery-img"></div>
       </div>
-    </div>
-    <div class="home-img home-img-sm"></div>
-    <div class="timeline">
-      <h2>Organisation de la journée</h2>
-      <div class="timeline-container">
-        <div class="timeline-img1"></div>
-        <div class="timings">
-          <h3>01.&nbsp &nbsp Cérémonie et vin d'honneur</h3>
-          <div class="text">
-            Samedi 21 juin 2025 à 14h <br />
-            Mairie de Guerlesquin (29)
-          </div>
-          <h3>02.&nbsp &nbsp Réception</h3>
-          <div class="text">
-            A partir de 17h <br />
-            Salle Bilzig, Locquirec (29)
-          </div>
-          <br />
-          <br />
 
-        </div>
-        <div class="timeline-img2"></div>
+
+      <div class="gallery hz-margin reveal">
+        <div class="parallal-img"></div>
+        <div class="parallal-img"></div>
+        <div class="parallal-img"></div>
       </div>
-    </div>
 
-    <div class="v-reposition-container">
-      <div class="h-reposition-container">
-        <div id="story" class="hz-margin">
-          <h3 class="reveal">
-            De Rouen à Plouhinec... <br />
-          </h3>
-          <p class="text reveal">
-            Vous serez accueillis avec toute notre attention. N'hésitez pas à nous faire part de vos demandes particulières, que cela soit :
-            <ul class="text reveal">
-            <li> un besoin de garder des animaux (possibilité de s'organiser en commun) ;
-            <li> un régime particulier, des allergies... ;
-            <li> une demande vis-à-vis de l'accessibilité des divers lieux ;
-            <li> des besoins de covoiturage ;
-            <li>...</ul>
-          </p>
-        </div>
-
-        <div class="gallery hz-margin reveal">
-          <div class="gallery-img"></div>
-          <div class="gallery-img"></div>
-          <div class="gallery-img"></div>
-        </div>
-
-
-        <div class="gallery hz-margin reveal">
-          <div class="parallal-img"></div>
-          <div class="parallal-img"></div>
-          <div class="parallal-img"></div>
-        </div>
-
-        <div id="invitation" class="invitation">
-          <h2 class="reveal">Informations pratiques</h2>
-          <div class="invitation-container reveal">
-            <div class="invitation-item">
-              <h3>
-                01. <br />
-                Votre faire-part
-              </h3>
-              <div class="text">
-                Si vous ne l'avez pas encore reçu... <br />
-                Ou si vous l'avez perdu ! <br />
-                Retrouvez le faire-part en format numérique
-              </div>
-
-              <a
-                href="Wedding_Invitation_Card.png"
-                download="Invitation | 21 Juin 2025"
-              >
-                <div class="text links">FAIRE-PART</div>
-              </a>
+      <div id="invitation" class="invitation">
+        <h2 class="reveal">Informations pratiques</h2>
+        <div class="invitation-container reveal">
+          <div class="invitation-item">
+            <h3>
+              01. <br />
+              Votre faire-part
+            </h3>
+            <div class="text">
+              Si vous ne l'avez pas encore reçu... <br />
+              Ou si vous l'avez perdu ! <br />
+              Retrouvez le faire-part en format numérique
             </div>
-            <div class="invitation-item">
-              <h3>
-                02. <br />
-                Itinéraires
-              </h3>
-              <div class="text">
-                 La mairie et le vin d'honneur : où se garer ?
-              </div>
-              <a
-                href="https://maps.app.goo.gl/6oFnLb9m2gLYfhVY7"
-                target="_blank"
-              >
-                <div class="text links">CEREMONIE</div>
-              </a>
-			  <div class="text">
-                 Le lieu de réception
-              </div>
-              <a
-                href="https://maps.app.goo.gl/p5g73XH6zuCSCNwr8"
-                target="_blank"
-              >
-                <div class="text links">RECEPTION</div>
-              </a>
-            </div>
-            <div class="invitation-item">
-              <h3>
-                03. <br />
-                Où loger
-              </h3>
-              <a
-              href="https://maps.app.goo.gl/shUfgMVMyPRHVFTs7"
-              target="_blank"
-            >
-              <div class="text links">CAMPING</div>
+
+            <a href="Wedding_Invitation_Card.png" download="Invitation | 21 Juin 2025">
+              <div class="text links">FAIRE-PART</div>
             </a>
+          </div>
+          <div class="invitation-item">
+            <h3>
+              02. <br />
+              Itinéraires
+            </h3>
+            <div class="text">
+              La mairie et le vin d'honneur : où se garer ?
+            </div>
+            <a href="https://maps.app.goo.gl/6oFnLb9m2gLYfhVY7" target="_blank">
+              <div class="text links">CEREMONIE</div>
+            </a>
+            <div class="text">
+              Le lieu de réception <br />
+              Attention avec la St-Jean il faudra vous garez un peu plus loin. Place handicapé reservée devant la mairie.
+            </div>
+            <a href="https://maps.app.goo.gl/p5g73XH6zuCSCNwr8" target="_blank">
+              <div class="text links">RECEPTION</div>
+            </a>
+          </div>
+          <div class="invitation-item">
+            <h3>
+              03. <br />
+              Le planning
+            </h3>
+            <div class="text">
+              <ul>
+                <li>Samedi 21 juin 14h   - Cérémonie à la mairie de Guerlesquin</li>
+                <li>Samedi 21 juin 14h30 - Vin d'honneur devant la mairie avec photographe</li>
+                <li>Samedi 21 juin 17h   - Départ pour Locquirec, activités sur place</li>
+                <li>Samedi 21 juin 20h   - Début du repas</li>
+                <li>Samedi 21 juin 22h30 - Première danse</li>
+                <li>Dimanche 22 juin 11h - Rendez-vous à Locquirec pour un brunch avant les départ</li>
+            </ul>
             </div>
           </div>
         </div>
-            <div class="registry-img registry-img-lg" id="parallax2"></div>
-        <div class="registry-img registry-img-sm"></div>
-
-        <div class="parting-message reveal">
-          <h1>En espérant vous voir bientôt !</h1>
-        </div>
-        <div id="countdown" class="countdown hz-margin">
-          <h3>Le décompte commence... <br /></h3>
-          <!-- count-down -->
-          <div class="countdown col">
-            <div class="timer middle">
-              <span>
-                <div id="days">12</div>
-                <h3>Jours</h3>
-              </span>
-              <span>
-                <div id="hours">12</div>
-                <h3>Heures</h3>
-              </span>
-              <span>
-                <div id="minutes">12</div>
-                <h3>Minutes</h3>
-              </span>
-              <span>
-                <div id="seconds">12</div>
-                <h3>Secondes</h3>
-              </span>
-            </div>
-          </div>
-          <!--  -->
-        </div>
-        <footer>
-          <div class="text">
-            © 2024 Made by Célia et Nicolas from <a href="https://github.com/AnkitaDas-29/wedding-invitation" class="text">@AnkitaDas-29</a>
-          </div>
-        </footer>
       </div>
-    </div>
+      <div class="registry-img registry-img-lg" id="parallax2"></div>
+      <div class="registry-img registry-img-sm"></div>
 
-    <a href="#" class="back-to-top"
-      ><i class="fas fa-angle-up" aria-hidden="true"></i
-    ></a>
-    <div>
+      <div class="parting-message reveal">
+        <h1>En espérant vous voir bientôt !</h1>
+      </div>
+      <div id="countdown" class="countdown hz-margin">
+        <h3>Le décompte commence... <br /></h3>
+        <!-- count-down -->
+        <div class="countdown col">
+          <div class="timer middle">
+            <span>
+              <div id="days">12</div>
+              <h3>Jours</h3>
+            </span>
+            <span>
+              <div id="hours">12</div>
+              <h3>Heures</h3>
+            </span>
+            <span>
+              <div id="minutes">12</div>
+              <h3>Minutes</h3>
+            </span>
+            <span>
+              <div id="seconds">12</div>
+              <h3>Secondes</h3>
+            </span>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <footer>
+        <div class="text">
+          © 2024 Made by Célia et Nicolas from <a href="https://github.com/AnkitaDas-29/wedding-invitation"
+            class="text">@AnkitaDas-29</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+  <div>
     <script>
       //back to top -up arrow
       $(function () {
@@ -244,5 +238,6 @@
     </script>
     <script type="text/javascript" src="count-down.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
